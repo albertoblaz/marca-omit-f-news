@@ -1,9 +1,16 @@
 {
-    "name": "Omit Liga F news",
-    "description": "Remove all news about Liga F from marca.com and as.com",
-    "version": "1.0",
-    "manifest_version": 3,
-    "action": {
-        "default_popup": "popup.html"
-    }
-  }
+  "name": "Omit Liga F news",
+  "description": "Remove all news about Liga F from marca.com and as.com",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "js": ["script.js"],
+    "matches": [
+      "https://as.com/*",
+      "https://marca.com/*"
+    ]
+  }]
+}
