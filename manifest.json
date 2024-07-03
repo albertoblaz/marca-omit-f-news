@@ -1,8 +1,8 @@
 {
-    "name": "Marca without Liga F",
-    "description": "Remove all news about Liga F from marca.com",
+    "name": "Omit Liga F news",
+    "description": "Remove all news about Liga F from marca.com and as.com",
     "version": "1.0",
-    "manifest_version": 1,
+    "manifest_version": 3,
     "action": {
         "default_popup": "popup.html"
     }
